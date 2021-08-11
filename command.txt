@@ -1,0 +1,1 @@
+python inference.py --checkpoint_path wav2lip_gan.pth  --face swatishinde.jpg --audio Pitch.mp3

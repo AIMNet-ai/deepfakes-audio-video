@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+
+    
+
+    <title>Home</title>
+</head>
+<body >
+    
+    <div class="upload-container">
+        <div class="row">
+            <div id="particles-js">
+                
+                <div class="col-sm">
+                    <center>
+                        <h2 id="signinlabel">SignIn</h2>
+                        <form id="signinfrom"  action="/" method="POST">
+                      
+                            <label>Username </label><br><input type="text" name="usname" placeholder="example@gmail.com"><br> 
+                            <label>Password </label><br><input type="password" name="upass" ><br><br>
+                            
+                            
+                            <div class="mybtnstmp">
+                            <input type="submit"  class="btn btn-primary" value="Submit" />
+                            <input type="reset" style="margin-top: 10px;" class="btn btn-primary" value="Reset" />
+                            </div>
+                        
+                    </form>
+                    
+                </center>
+                </div>
+                <center>    
+                    {% if msg|length !=0%}      
+                        <div class="alert alert-danger" role="alert" id="signinalert">
+                            {{msg}}  
+                        </div>
+                    {% endif %}
+                    <div class="col-sm" id="registermsg" >
+                        
+                        Please register if you have not account!</span>
+                        <input type="button" id="regbut" onclick="location.href='/signup';" value="Register" />
+                        
+                    </div>
+            </center>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="../static/js/particles.min.js"></script>
+<script type="text/javascript" src="../static/js/app.js"></script>
+</body>
+</html>

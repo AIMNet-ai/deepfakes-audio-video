@@ -1,0 +1,245 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body
+{
+     height: 100eh;
+}
+
+/* Partcles-JS */
+#particles-js
+{
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    background:rgb(4, 50, 77);
+}
+
+
+
+#signinform label
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    size: 20px;
+    font-size: 30px;
+    padding: 20px;
+}
+#signinform input[type="text"],#signinform input[type="password"]
+{
+    width: 60%;
+    height: 30px;
+    color:black;
+    margin-top: 8px;
+    
+}
+
+
+#regbut
+{
+    font-size: 15px;
+    border: 1px solid black;
+    background: none;
+    color: white;
+    margin-left: 20px;
+}
+#regbut:hover
+{
+    background-color: green;
+}
+
+
+
+
+#signupform
+{
+   
+    background-color: rgb(19, 19, 19,0.8);
+    padding: 20px;
+    border: solid 2px black;
+    color:white;
+    border-radius: 20px;
+    border-style: inset;
+    position:absolute;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+#myform
+{
+    position:absolute;
+    top:10%;
+    left: 25%;
+}
+#signupform label , input[type="submit"] , #signupform label input[type="reset"]
+{
+    margin-top: 10px;
+}
+
+
+#signupform input[type="text"],#signupform input[type="password"]
+{
+    width: 100%;
+    height: 40px;
+    color:black;
+}
+
+#signupform label
+{
+    font-size: larger;
+    font-family: Comic Sans MS;
+    
+}
+
+#signupform input[type="submit"],#signupform  input[type="reset"]
+{
+    width: 100%;
+    height: 40px;
+    font-family: Comic Sans MS;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: rgb(155, 1, 1) ;
+    border-style: inset;
+    background-color: rgb(6, 7, 7,0.9);
+}
+#signupform input[type="submit"]:hover,#signupform input[type="reset"]:hover
+{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: red;
+    font-family: Comic Sans MS;
+}
+
+
+
+#upform
+{
+   
+    font-size: auto;
+    font-family: "Lucida Console";
+    color: aliceblue;
+    position: absolute;
+    top: 30%;
+    background: rgb(1, 23, 34,0.9);
+    padding: 5px;
+    left: 30%;
+    right: 30%;
+    height: 30%;
+    width: 45%;
+}
+
+
+#uploadrow
+{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 25%;
+    right: 32%;
+    background: rgb(1, 23, 34,0.9);
+    padding: 5%;
+    color:white;
+}
+#signinlabel
+{
+    top: 15%;
+    position: absolute;
+    left: 46%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+#signinfrom
+{
+    position: absolute;
+    width: 46%;
+    height: auto;
+    top: 25%;
+    right: 27%;
+    background: rgb(1, 23, 34,0.9);
+    padding: 1em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+#signinfrom label
+{
+    color: white;
+    padding: 10px;
+
+}
+#signinfrom input[type="text"],input[type="password"]
+{
+    /* color: red;
+     */
+     width: 60%;
+}
+
+#signinalert
+{
+    position: absolute;
+    color:white;
+    font-size: 20px;
+    bottom: 20%;
+    width: 45%;
+    left: 27%;
+    height: 4%;
+    padding: 2px;
+    background-color: rgba(190, 50, 50, 0.9);
+    font-family: 'Courier New', Courier, monospace;
+}
+.upload-container
+{
+    height: 100%;
+    /* position: relative; */
+}
+#subbtn
+{
+    top: 5%;
+    font-size:20px;
+}
+
+
+#myvideo
+{
+   position: absolute;
+   width: 50%;
+   height: 50%;
+   top:20%;
+   right:25%;
+}
+#video-frame
+{
+    color: white;
+    position: relative;
+    top:200px;
+}
+
+
+.mybtns
+{
+    position: absolute;
+    width: 50%;
+    top: 75%;
+    
+    left: 25%;
+}
+.mybtnstmp
+{
+    margin-top: 10px;
+
+}
+
+#registermsg
+{
+    position: absolute;
+    bottom: 30%;
+    left:38%;
+    color:white;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}

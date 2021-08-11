@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        SignUp
+    </title>
+
+    <!-- <link rel="stylesheet" href="{{url_for('static',filename='style.css') }}"> -->
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    
+
+</head>
+
+<body>
+    
+    <div class="container container-flauid">
+
+        <div class="row">
+            <div id="particles-js">
+                <div class="col-sm">
+                    <div class="col-sm-3 col-xs-3 col-md-3 col-lx-3 col-xl-3">
+                        .
+                    </div>
+                    <div id="myform" class="col-sm-6 col-xs-6 col-md-6 col-lx-6 col-xl-6">
+                        <!-- <h2 id="reglabel"> SignUp</h2>                         -->
+                        <form id="signupform" method="POST" action="/signup">
+
+                            <label>First Name </label><input type="text" name="fname" placeholder="John"><br>
+                            <label>Last Name </label><input type="text" name="lname" placeholder="Wick"><br>
+                            <label>Email </label><input type="text" name="email" placeholder="example@gmail.com"><br>
+                            <label>Password </label><input type="password" name="pass1"><br>
+                            <label>Confirm Password </label><input type="password" name="pass2"><br><br>
+                            <input type="submit" value="Submit" /><br>
+                            <input type="reset" value="Reset" />
+                        </form>
+                        <p>{{msg}}</p>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 col-md-3 col-lx-3 col-xl-3">
+                        .
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm" id="registermsg" style="bottom: 9%;">
+                        
+            Please SignIn if you have you account!</span>
+            <a href="/" class="btn btn-primary" role="button" aria-pressed="true">SignIn</a>
+            
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="{{url_for('static',filename='Jquery/myjquery.js') }}"></script>
+    <script type="text/javascript" src="../static/js/particles.min.js"></script>
+    <script type="text/javascript" src="../static/js/app.js"></script>
+</body>
+
+</html>

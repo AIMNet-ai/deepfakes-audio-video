@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+     
+     <div class="upload-container">
+        <div class="row">
+            <div id="particles-js">
+                <div class="col-sm">
+                    <center>
+                        
+                        <form method="POST" action="/upload" enctype="multipart/form-data" id="uploadrow">
+                        
+                            <input type="file" class="custom-file-input" name="image" id="image">
+                            <label class="custom-file-label" for="image">Select Image</label>
+                            <br> <br>
+                            <input type="file" class="custom-file-input" name="audio" id="audio">
+                            <label class="custom-file-label" for="audio">Select Audio</label>
+                            <br><br><br>
+                        <button type="submit" class="btn btn-primary" id="subbtn">Submit</button>
+                        <a href="/logout" id="subbtn" class="btn btn-primary" role="button" aria-pressed="true">Logout</a>
+                        </form>
+                </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../static/js/particles.min.js"></script>
+    <script type="text/javascript" src="../static/js/app.js"></script>
+</body>
+</html>
