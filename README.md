@@ -43,7 +43,7 @@ This repository contains a flask application which will Deepfakes on audio and I
 
 
 
-<h2>References<h2>
+<h2>References</h2>
 <ol>
   <li>
       Wav2Lip : https://arxiv.org/pdf/2003.00418.pdf
