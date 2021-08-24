@@ -66,7 +66,7 @@ This repository contains a flask application which will Deepfakes on audio and I
     <li>
         Step 2: run python app.py on cmd   
     </li>
-    <li>
+    
   </ol>
 <!-- <br>
 
