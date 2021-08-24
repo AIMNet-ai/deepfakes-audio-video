@@ -4,9 +4,10 @@ This repository contains a flask application which will Deepfakes on audio and I
 <h2>Technology Stack:</h2>
 <ol>
   <li>Wav2lip </li>
-  <li>Syncnet Discriminator</li>
+  <li>SyncNet Discriminator</li>
   <li>Flask as a backend server</li>
   <li>Python</li>
+  <li>MongoDB database</li>
   <li>HTML</li>
   <li>CSS</li>
   <li>Paricle JS</li>
@@ -40,6 +41,20 @@ This repository contains a flask application which will Deepfakes on audio and I
 ![alt text](Images/output.png)
 <br>
 
+
+
+<h2>References<h2>
+<ol>
+  <li>
+      Wav2Lip : https://arxiv.org/pdf/2003.00418.pdf
+  </li>
+  <li>
+      SyncNet Discriminator : https://www.robots.ox.ac.uk/~vgg/publications/2016/Chung16a/chung16a.pdf
+  </li>
+  <li>
+      LipGan : https://arxiv.org/pdf/2008.10010.pdf
+  </li>
+</ol>
 
 <!-- <br>
 
