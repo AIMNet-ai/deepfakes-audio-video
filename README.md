@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Deepfakes-for-Video-Conferencing-Using-General-Adversarial-Networks-GANs-and-Multilingual-Voice-Clonning
 This repository contains a flask application which will detect the presence of heart disease using KNN, Random Forest and Gradient Boosting Classifier
 
@@ -22,3 +23,6 @@ This repository contains a flask application which will detect the presence of h
 <br>
 
 ![alt text](https://github.com/JayeshShelar/Heart-Disease-Prediction-KNN/blob/main/assets/images/UI_SS_3.jpg) -->
+=======
+
+>>>>>>> 3789ba2c060af1a4fc31d6f8263c88dec75f9c8e
