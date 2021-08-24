@@ -56,6 +56,18 @@ This repository contains a flask application which will Deepfakes on audio and I
   </li>
 </ol>
 
+<br>
+<h2>Steps to run an Application</h2>
+  <br>
+  <ol>
+    <li>
+        Step 1: run pip install -r requirements.txt on cmd    
+    </li>
+    <li>
+        Step 2: run python app.py on cmd   
+    </li>
+    <li>
+  </ol>
 <!-- <br>
 
 ![alt text](https://github.com/JayeshShelar/Heart-Disease-Prediction-KNN/blob/main/assets/images/UI_SS_2.jpg)
