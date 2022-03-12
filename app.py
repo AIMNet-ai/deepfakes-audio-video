@@ -3,7 +3,6 @@ import os
 from werkzeug.utils import secure_filename
 import pymongo
 from flask_pymongo import PyMongo
-import bcrypt
 import subprocess
 app = Flask(__name__)
 
@@ -36,17 +35,17 @@ def home():
 
             if loginuser:
                 gotpass = loginuser["password"]
-                if bcrypt.hashpw(passd.encode('UTF-8'), gotpass) == gotpass:
+                if passd == gotpass:
                     session['email'] = email
                     return render_template("upload.html", msg=session['email'])
                 else:
                     msg = "Login Failed"
-                    return render_template("index.html", msg=msg)
+                    return render_template("login-register.html", msg=msg)
             else:
                 msg = "userid or password is not correct"
                 print(msg)
-                return render_template("index.html", msg=msg)
-            return render_template("index.html")
+                return render_template("login-register.html", msg=msg)
+            return render_template("login-register.html")
         cmd = f"python inference.py --checkpoint_path wav2lip_gan.pth  --face {imagepath} --audio {audiopath}"
         print(cmd)
         p = subprocess.Popen(cmd)
@@ -70,15 +69,14 @@ def signup():
         if ucheck is None:
             if pass1 != pass2:
                 msg = "password does not match please enter valid password"
-                return render_template("Signup.html", msg=msg)
+                return render_template("login-register.html", msg=msg)
             else:
-                hashpass = bcrypt.hashpw(
-                    pass1.encode('utf-8'), bcrypt.gensalt())
-                users.insert({'fname': fname, 'lname': lname,
+                hashpass = pass1
+                users.insert_one({'fname': fname, 'lname': lname,
                              'email': email, 'password': hashpass})
                 return redirect('/')
 
-    return render_template("Signup.html")
+    return render_template("login-register.html")
 
 
 @app.route("/logout", methods=['GET', 'POST'])

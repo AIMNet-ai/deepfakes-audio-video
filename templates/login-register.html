@@ -49,11 +49,21 @@
     />
   </head>
 
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Top content -->
     <div class="top-content">
       <div class="inner-bg">
+        
+    </div>
         <div class="container">
+            <div class="row w-50" style="margin: -70px 0">        
+                <div class=" m-auto"> 
+                {% if msg|length !=0%}      
+                    <div class="alert alert-danger" role="alert" id="signinalert">
+                        {{msg}}  
+                    </div>
+                {% endif %}
+            </div>   
           <div class="d-flex" style="display:flex; justify-content:center">
             <div class="col-sm-5" id="login-box">
               <div class="form-box">
@@ -74,7 +84,7 @@
                       >
                       <input
                         type="text"
-                        name="form-username"
+                        name="usname"
                         placeholder="Username..."
                         class="form-username form-control"
                         id="form-username"
@@ -86,7 +96,7 @@
                       >
                       <input
                         type="password"
-                        name="form-password"
+                        name="upass"
                         placeholder="Password..."
                         class="form-password form-control"
                         id="form-password"
@@ -131,7 +141,7 @@
                 <div class="form-bottom">
                   <form
                     role="form"
-                    action=""
+                    action="/signup"
                     method="post"
                     class="registration-form"
                   >
@@ -141,7 +151,7 @@
                       >
                       <input
                         type="text"
-                        name="form-first-name"
+                        name="fname"
                         placeholder="First name..."
                         class="form-first-name form-control"
                         id="form-first-name"
@@ -153,7 +163,7 @@
                       >
                       <input
                         type="text"
-                        name="form-last-name"
+                        name="lname"
                         placeholder="Last name..."
                         class="form-last-name form-control"
                         id="form-last-name"
@@ -163,7 +173,7 @@
                       <label class="sr-only" for="form-email">Email</label>
                       <input
                         type="text"
-                        name="form-email"
+                        name="email"
                         placeholder="Email..."
                         class="form-email form-control"
                         id="form-email"
@@ -175,31 +185,31 @@
                       >
                       <input
                         type="password"
-                        name="form-password"
+                        name="pass1"
                         placeholder="Password..."
                         class="form-password form-control"
                         id="form-password"
                       />
                     </div>
                     <div class="form-group">
-                      <label class="sr-only" for="form-password2"
-                        >Confirm Password</label
-                      >
-                      <input
-                        type="password"
-                        name="form-password2"
-                        placeholder="Confirm Password..."
-                        class="form-password form-control"
-                        id="form-password"
-                      />
-                    </div>
+                        <label class="sr-only" for="form-password"
+                          >Confirm Password</label
+                        >
+                        <input
+                          type="password"
+                          name="pass2"
+                          placeholder="Confirm Password..."
+                          class="form-password form-control"
+                          id="form-password"
+                        />
+                      </div>
                     <button type="submit" class="btn">Sign me up!</button>
                     <button class="direct-btn" id="goto-signin">Already have account</button>
                   </form>
                 </div>
               </div>
             </div>
-			
+
         </div>
       </div>
     </div>
