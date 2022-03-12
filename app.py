@@ -52,7 +52,7 @@ def home():
         p = subprocess.Popen(cmd)
         p.terminate()
         out, err = p.communicate()
-    return render_template("index.html")
+    return render_template("login-register.html")
 
 
 @app.route("/signup", methods=['GET', 'POST'])
