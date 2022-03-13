@@ -51,7 +51,7 @@ def home():
         p = subprocess.Popen(cmd)
         p.terminate()
         out, err = p.communicate()
-    return render_template("login-register.html")
+    return render_template("simple-deepfake.html")
 
 
 @app.route("/signup", methods=['GET', 'POST'])
@@ -78,6 +78,17 @@ def signup():
 
     return render_template("login-register.html")
 
+@app.route("/simple", methods=['GET', 'POST'])
+def simple():
+    return render_template("simple-deepfake.html")
+
+@app.route("/translated", methods=['GET', 'POST'])
+def translated():
+    return render_template("translated-deepfake.html")
+
+@app.route("/audiobook", methods=['GET', 'POST'])
+def audiobook():
+    return render_template("audiobook-deepfake.html")
 
 @app.route("/test", methods=['GET', 'POST'])
 def tester():
