@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Deepfake</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="../static/assets/bootstrap/css/bootstrap.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="../static/assets/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- <link rel="stylesheet" href="../static/assets/css/form-elements.css" /> -->
+    <link rel="stylesheet" href="../static/assets/css/common.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="../static/assets/ico/favicon.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="../static/assets/ico/apple-touch-icon-144-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="../static/assets/ico/apple-touch-icon-114-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="../static/assets/ico/apple-touch-icon-72-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="../static/assets/ico/apple-touch-icon-57-precomposed.png"
+    />
+  </head>
+
+  <body class="overflow-x-hidden">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Simple Deepfake <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Translated Deepfake</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Audiobook Deepfake</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Top content -->
+    <div class="top-content">
+      <div class="inner-bg"></div>
+
+      <div class="container">
+        <div
+          class="d-flex p-3"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <div class="card p-2 m-4">
+            <div class="card-header">
+              <h3>Simple Deepfake</h3>
+            </div>
+            <div class="card-body">
+              <form
+                action="../static/simple-deepfake.php"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Select a video</label>
+                  <input
+                    type="file"
+                    class="form-control-file"
+                    id="exampleFormControlFile1"
+                    name="video"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Select a audio</label>
+                  <input
+                    type="file"
+                    class="form-control-file"
+                    id="exampleFormControlFile1"
+                    name="audio"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="../static/assets/js/jquery-1.11.1.min.js"></script>
+    <script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/assets/js/jquery.backstretch.min.js"></script>
+    <script src="../static/assets/js/scripts.js"></script>
+    <script src="../static/assets/js/toggler.js"></script>
+
+    <!--[if lt IE 10]>
+      <script src="../static/assets/js/placeholder.js"></script>
+    <![endif]-->
+  </body>
+</html>

@@ -118,7 +118,7 @@ def upload():
                 return redirect('/upload')
         else:
             return redirect("/")
-    return render_template('upload.html')
+    return render_template('simple-deepfake.html')
 
 
 @app.route("/showvid", methods=['GET', 'POST'])
