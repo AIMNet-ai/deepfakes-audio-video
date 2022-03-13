@@ -109,7 +109,7 @@
                 enctype="multipart/form-data"
               >
                 <div class="form-group">
-                  <label for="exampleFormControlFile1">Select a video</label>
+                  <label for="exampleFormControlFile1">Select a book</label>
                   <input
                     type="file"
                     class="form-control-file"
@@ -119,7 +119,7 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlFile1">Select a audio</label>
+                  <label for="exampleFormControlFile1">Select a Reader</label>
                   <input
                     type="file"
                     class="form-control-file"
@@ -128,9 +128,31 @@
                     required
                   />
                 </div>
-                <button type="submit" class="btn btn-primary d-flex m-auto">
-                  Submit
-                </button>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01"
+                      >Source Language</label
+                    >
+                  </div>
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="1">Hindi</option>
+                    <option value="2">English</option>
+                  </select>
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01"
+                      >Target Language</label
+                    >
+                  </div>
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="1">Hindi</option>
+                    <option value="2">English</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary d-flex m-auto">Submit</button>
               </form>
             </div>
           </div>

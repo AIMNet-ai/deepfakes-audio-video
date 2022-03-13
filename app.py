@@ -79,6 +79,10 @@ def signup():
     return render_template("login-register.html")
 
 
+@app.route("/test", methods=['GET', 'POST'])
+def tester():
+    return render_template("translated-deepfake.html")
+
 @app.route("/logout", methods=['GET', 'POST'])
 def logout():
     session.pop('email', None)
